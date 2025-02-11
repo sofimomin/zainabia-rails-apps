@@ -1,0 +1,207 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.small-nav {
+  background-color: #003c70;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 150px;
+  height: 35px;
+  font-size: 15px;
+}
+.small-nav_left {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.small-nav_left a {
+  color: white;
+  text-decoration: none;
+}
+.small-nav_left a:hover {
+  color: #126cba;
+  transition: all 0.5s ease-in-out;
+}
+
+.small-nav_right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.small-nav_right a:hover {
+  color: #126cba;
+  transition: all 0.5s ease-in-out;
+}
+.small-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.large-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: white;
+}
+
+.large-nav-links {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-weight: 500;
+}
+.large-nav-links a {
+  color: rgb(0, 60, 111);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.large-nav-links a:hover {
+  color: #009460;
+  transition: all 0.5s ease-in-out;
+}
+.large-nav-btn {
+  display: flex;
+  gap: 20px;
+}
+
+.large-nav-btn a {
+  background-color: #009460;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.large-nav-btn a:hover {
+  background-color: #003c70;
+  transition: all 0.5s ease-in-out;
+}
+
+.hero-section {
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(https://raoholidays.in/wp-content/uploads/2023/02/slide1.webp);
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.hero-section-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  width: 650px;
+}
+
+.hero-section-text h2 {
+  font-weight: 900;
+  font-size: 80px;
+}
+
+.hero-section-text h1 {
+  font-weight: lighter;
+  font-size: 90px;
+}
+
+.hero-section-text p {
+  font-weight: 900;
+  font-size: large;
+}
+
+.hero-section-btn a {
+  background-color: #009460;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: larger;
+}
+
+.hero-section-btn a:hover {
+  background-color: #003c70;
+  transition: all 0.5s ease-in-out;
+}
+
+.dropdown{
+  position: relative;
+}
+
+ .dropdown-content{
+   display: none;
+   position: absolute;
+   left: -30px;
+   background-color: #ffffff;
+   min-width: 250px;
+   box-shadow: 0px 8px 16px 0px rgba(48, 41, 41, 0.949);
+   z-index: 1;
+   font-size:10px;
+}
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+
+.dropdown-content a {
+  display: inline-block;
+  padding: 12px;
+}
+.dropdown-content div {
+  border-bottom: 1px solid #003c70;
+}
+
+.dropdown-content div:hover{
+  background-color: #003c70;
+  
+  color: white;
+}
+.dropdown-content a:hover{
+  color: white;
+}
+
+/* .dropdown-sublist{
+  position: relative;
+} */
+
+.dropdown-sublist_content {
+  display: none;
+   position: absolute;
+   top:45px;
+   right:-250px;
+   background-color: #ffffff;
+   min-width: 250px;
+   box-shadow: 0px 8px 16px 0px rgba(48, 41, 41, 0.949);
+   z-index: 1;
+   font-size:10px;
+}
+
+.dropdown-sublist:hover .dropdown-sublist_content{
+  display: block;
+  background-color: white;
+  
+}
+
+.dropdown-sub-content {
+  display: none;
+   position: absolute;
+   top:5px;
+   right:-250px;
+   background-color: #ffffff;
+   min-width: 250px;
+   box-shadow: 0px 8px 16px 0px rgba(48, 41, 41, 0.949);
+   z-index: 1;
+   font-size:10px;
+}
+
+ .dropdown-sub:hover .dropdown-sub-content{
+  display: block;
+  background-color: white;
+
+}
