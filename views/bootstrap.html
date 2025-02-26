@@ -10,21 +10,20 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+    
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="margin-bottom: 10px;">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="https://themewagon.github.io/organic/images/logo.svg" alt="Organic" srcset=""></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -36,63 +35,118 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
+        
+        <div class="dropdown ">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: white; color: gray;  margin-right: 3px;">
+            All Categories
+          </button>
+          <ul class="dropdown-menu dropdown-menu-white">
+            <li><a class="dropdown-item" href="#">Grocery</a></li>
+            <li><a class="dropdown-item" href="#">Drinks</a></li>
+            <li><a class="dropdown-item" href="#">chocolates</a></li>
+             
+          </ul>
+        </div>
+
+        <form class="d-flex" role="search" style="margin-right: 12vh;">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search for more than 20,000 products"
+            aria-label="Search"
+            
+          />
+          <a><i class="fa-solid fa-magnifying-glass"></i></a>
+          
+        </form>
+
+        
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-weight: bold;">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
+            <div class ="dropdown " >
+              <a class="btn  dropdown-toggle" type="" data-bs-toggle="dropdown" aria-expanded="" style="background-color: white; color: rgb(0, 0, 0);  font-weight: bold;">
+                 pages
               </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
+              <ul class="dropdown-menu dropdown-menu-white">
+                <li><a class="dropdown-item" href="#">ABOUT US</a></li>
+                <li><a class="dropdown-item" href="#">SHOP</a></li>
+                <li><a class="dropdown-item" href="#">SINGLE PRODUCTS</a></li>
+                <li><a class="dropdown-item" href="#">CART</a></li>
+                <li><a class="dropdown-item" href="#"> CHECKOUT</a></li>
+                <li><a class="dropdown-item" href="#">BLOG</a></li><li><a class="dropdown-item" href="#">SHOP</a></li>
+                <li><a class="dropdown-item" href="#">SINGLE POST</a></li>
+                <li><a class="dropdown-item" href="#">STYLES</a></li>
+                <li><a class="dropdown-item" href="#">CONTACT </a></li>
+                <li><a class="dropdown-item" href="#">THANK YOU</a></li>
+                
+                 
               </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
+            </div>
+  
+
+             
+          
         </div>
       </div>
     </nav>
 
-    <div class="container-fluid">
-      <div class="alert alert-info alert-dismissible fade show" role="alert">
-        <strong>Holy guacamole!</strong> You should check in on some of those
-        fields below.
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="alert"
-          aria-label="Close"
-        ></button>
+    <img src="https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid" alt="..." style="height: fit-content; width: min-content;" >
+
+    <section>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-4">
+            <div class="card">
+              
+              <div class="card-body" style="background-color: rgb(112, 179, 13); color: white;">
+                <h1 class="card-title">Fresh from farm</h1>
+                <p class="card-text">
+                  
+Lorem ipsum dolor sit amet, consectetur adipi elit.
+                </p>
+           
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              
+              <div class="card-body" style="background-color: rgb(37, 56, 9); color: white;">
+                <h1 class="card-title"> 100% Organic </h1>
+                <p class="card-text">
+                
+                </p>
+               
+                Lorem ipsum dolor sit amet, consectetur adipi elit.
+                
+             
+              
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+      
+    </section>
+
+  
+
+
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
   </body>
 </html>

@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind new css</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  </head>
+  <body>
+    <div class="flex justify-end pr-44 border-b-1 border-gray-400 h-10">
+      <div
+        class="border-r border-l border-gray-400 py-5 px-4 flex items-center hover:bg-blue-700 hover:text-white duration-300 ease-in-out cursor-pointer"
+      >
+        <i class="fa-solid fa-phone pr-1 text-sm"></i>9149816162
+      </div>
+      <div
+        class="border-r border-gray-400 py-5 px-4 flex items-center hover:bg-blue-700 hover:text-white duration-300 ease-in-out cursor-pointer"
+      >
+        <i class="fa-solid fa-heart pr-1 text-sm"></i> Care
+      </div>
+      <div
+        class="border-r border-gray-400 py-5 px-4 flex items-center hover:bg-blue-700 hover:text-white duration-300 ease-in-out cursor-pointer"
+      >
+        <i class="fa-solid fa-location-dot pr-1 text-sm"></i>Stores
+      </div>
+      <div
+        class="border-r border-gray-400 py-5 px-4 flex items-center hover:bg-blue-700 hover:text-white duration-300 ease-in-out cursor-pointer"
+      >
+        <i class="fa-solid fa-right-to-bracket pr-1 text-sm"></i> Login
+      </div>
+    </div>
+
+    <div class="flex h-16 items-end px-48">
+      <div class="pt-15 cursor-pointer">
+        <img
+          src="https://www.thomascook.in/images/logo.jpg"
+          alt="logo"
+          srcset=""
+        />
+      </div>
+      <div class="flex pb-2 pl-32">
+        <button
+        id="dropdownHoverButton"
+        data-dropdown-toggle="dropdownHover"
+        data-dropdown-trigger="hover"
+        type="button"
+        class="px-4 text-gray-500 flex items-center  px-4 text-gray-500 hover:text-blue-700 duration-300 ease-in-out cursor-pointer font-bold"
+      >
+        Holidays
+        <svg
+          class="w-2.5 h-2.5 ms-3  "
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 10 6"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="m1 1 4 4 4-4"
+          />
+        </svg>
+      </button>
+      <div
+      id="dropdownHover"
+      class="z-999 hidden bg-white divide-y divide-gray-500 rounded-lg shadow-sm w-44"
+    >
+      <ul
+        class="py-2 text-sm text-gray-700 dark:text-gray-500"
+        aria-labelledby="dropdownHoverButton"
+      >
+        <li>
+          <a
+            href="#"
+            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+            >Dashboard</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+            >Settings</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+            >Earnings</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+            >Sign out</a
+          >
+        </li>
+      </ul>
+    </div>
+
+        <div
+          class="px-4 text-gray-500 hover:text-blue-700 duration-300 ease-in-out cursor-pointer font-bold"
+        >
+          Forex
+        </div>
+        <div
+          class="px-4 text-gray-500 hover:text-blue-700 duration-300 ease-in-out cursor-pointer font-bold"
+        >
+          Hotels
+        </div>
+        <div
+          class="px-4 text-gray-500 hover:text-blue-700 duration-300 ease-in-out cursor-pointer font-bold ;"
+        >
+          Flights
+        </div>
+        <div
+          class="px-4 text-gray-500 hover:text-blue-700 duration-300 ease-in-out cursor-pointer font-bold"
+        >
+          Cruise
+        </div>
+        <div
+          class="px-4 text-gray-500 hover:text-blue-700 duration-300 ease-in-out cursor-pointer font-bold"
+        >
+          Eurail
+        </div>
+        <div
+          class="px-4 text-gray-500 hover:text-blue-700 duration-300 ease-in-out cursor-pointer font-bold"
+        >
+          Loyalty
+          <span class="bg-red-600 text-white px-1 py-0.5 rounded-md text-xs animate__animated animate__flash animate__slow animate__infinite">
+            New
+          </span>
+        </div>
+        <div
+          class="px-4 text-gray-500 hover:text-blue-700 duration-300 ease-in-out cursor-pointer font-bold"
+        >
+          Gift Cards & offers
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="controls-carousel"
+      class="relative w-full top-5"
+      data-carousel="static"
+    >
+      <!-- Carousel wrapper -->
+      <div class="relative h-56 overflow-hidden md:h-96">
+        <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img
+            src="https://www.thomascook.in/images/home-page-banners/2025/bhutan-jma-1920x545.webp"
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            alt="..."
+          />
+        </div>
+        <!-- Item 2 -->
+        <div
+          class="hidden duration-700 ease-in-out"
+          data-carousel-item="active"
+        >
+          <img
+            src="https://www.thomascook.in/images/india-around/2025/feb/char-dham-WB-18.webp"
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            alt="..."
+          />
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img
+            src="https://www.thomascook.in/images/home-page-banners/2025/forex-cashback-1920x545-1.jpg"
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            alt="..."
+          />
+        </div>
+        <!-- Item 4 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img
+            src="https://www.thomascook.in/images/home-page-banners/2025/feb/australia-1920x545-1.webp"
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            alt="..."
+          />
+        </div>
+        <!-- Item 5 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img
+            src="https://www.thomascook.in/images/home-page-banners/2025/disney-cruise-line-1920x545.jpg"
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            alt="..."
+          />
+        </div>
+      </div>
+      <!-- Slider controls -->
+      <button
+        type="button"
+        class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        data-carousel-prev
+      >
+        <span
+          class="inline-flex items-center justify-center w-10 h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+        >
+          <svg
+            class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 6 10"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M5 1 1 5l4 4"
+            />
+          </svg>
+          <span class="sr-only">Previous</span>
+        </span>
+      </button>
+      <button
+        type="button"
+        class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        data-carousel-next
+      >
+        <span
+          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+        >
+          <svg
+            class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 6 10"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m1 9 4-4-4-4"
+            />
+          </svg>
+          <span class="sr-only">Next</span>
+        </span>
+      </button>
+    </div>
+
+    <div class="bg-gray-800/70 pt-5 pb-3 relative -top-21 z-999">
+      <form action="" class="flex flex-col items-center">
+        <div>
+          <p class="text-white text-2xl pb-2">
+            I want to holiday in and around....
+          </p>
+          <div class="flex">
+            <input
+              type="text"
+              class="h-8 rounded-l-md w-96"
+              placeholder="Destination e.g. Europe / Theme e.g. Adventure "
+            />
+            <button
+            id="dropdownDefaultButton"
+            data-dropdown-toggle="dropdown"
+            class="h-8 w-48 bg-white flex items-center justify-center text-gray-500"
+            type="button"
+          >
+            Budget per person
+            <svg
+              class="w-2.5 h-2.5 ms-3"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 10 6"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 1 4 4 4-4"
+              />
+            </svg>
+          </button>
+                 <!-- Dropdown menu -->
+                 <div
+                 id="dropdown"
+                 class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700"
+               >
+                 <ul
+                   class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                   aria-labelledby="dropdownDefaultButton"
+                 >
+                   <li>
+                     <a
+                       href="#"
+                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                       >Dashboard</a
+                     >
+                   </li>
+                   <li>
+                     <a
+                       href="#"
+                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                       >Settings</a
+                     >
+                   </li>
+                   <li>
+                     <a
+                       href="#"
+                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                       >Earnings</a
+                     >
+                   </li>
+                   <li>
+                     <a
+                       href="#"
+                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                       >Sign out</a
+                     >
+                   </li>
+                 </ul>
+               </div>
+            <input
+              type="text"
+              class="h-8 rounded-r-md"
+              placeholder="Month of travel "
+            />
+            <button
+              class="bg-blue-700 px-3 rounded-md py-1 text-white ml-2 hover:bg-blue-900 cursor-pointer"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+
+    <div class="text-center -mt-20 mx-48 mb-10">
+      <h1 class="text-2xl text-blue-700 mb-4"> 
+        Best offers exclusively for you!</h1>
+        <div class="grid grid-cols-3 gap-4">
+          <img
+            src="https://www.thomascook.in/images/site-banners/now-buy-forex1.jpg"
+            alt=""
+            class="w-full h-86"
+          />
+          <img
+            src="https://www.thomascook.in/images/home-page-banners/2025/feb/incredible-india-556x640-1.jpg"
+            alt=""
+            class="w-full h-86"
+          />
+          <img
+            src="https://www.thomascook.in/images/home-page-banners/2025/feb/japan-alpine-route-banner.jpg"
+            alt=""
+            class="w-full h-86"
+          />
+          <img
+            src="https://www.thomascook.in/images/home-page-banners/2025/slider/Himachal.jpg"
+            alt=""
+            class="w-full h-86"
+          />
+          <img
+            src="https://www.thomascook.in/images/home-page-banners/2025/feb/ladakh-web-img-2.jpg"
+            alt=""
+            class="w-full h-86"
+          />
+          <img
+            src="https://www.thomascook.in/images/home-page-banners/2025/feb/asian-dhamaka-3.jpg"
+            alt=""
+            class="w-full h-86"
+          />
+          <iframe src="https://www.youtube.com/embed/hL2wBrCspn0?si=xOF2G6fxPhurGAhw"
+           title="YouTube video player"
+            frameborder="0"
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+              class="w-full h-86">
+
+          </iframe>
+
+          <img
+            src="https://resources.thomascook.in/images/cms/1-fx-blog-bn.jpg"
+            alt=""
+            class="w-full h-86"
+          />
+          <iframe
+            src="https://www.youtube.com/embed/Do92T20M4JI?si=x_RPcKfos71pj3-X"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            class="w-full h-86"
+          ></iframe>
+        </div>
+
+    </div>
+    
+    <div class="bg-gray-200 flex flex-col items-center justify-center py-10">
+      <div class="flex flex-col items-center">
+        <h2 class="text-blue-700 text-2xl mb-4">
+          International Holiday Packages
+        </h2>
+        <p class="w-5/6 text-gray-700">
+          Whether it’s your first international trip or you have travelled
+          abroad multiple times, planning a holiday to a distant land is always
+          a special...
+        </p>
+        <div class="flex items-center space-x-4 mt-4">
+          <div class="bg-white p-2 border-1 border-gray-300">
+            <img
+              src="https://www.thomascook.in/images/home-page-banners/2024/nov/small-tile/Europe-1.jpg"
+              alt=""
+              srcset=""
+            />
+            <div class="flex items-center justify-between">
+              <div class="flex flex-col items-start">
+                <p class="text-gray-600">Europe</p>
+                <p class="text-gray-500 text-xs">Packages</p>
+              </div>
+              <div class="flex flex-col items-end">
+                <p class="text-xl text-blue-700">₹43,000.00</p>
+                <p class="text-gray-500 text-xs">Starting Price</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white p-2 border-1 border-gray-300">
+            <img
+              src="https://www.thomascook.in/images/home-page-banners/2024/nov/small-tile/CIS-1.jpg"
+              alt=""
+              srcset=""
+            />
+            <div class="flex items-center justify-between">
+              <div class="flex flex-col items-start">
+                <p class="text-gray-600">CIS</p>
+                <p class="text-gray-500 text-xs">Packages</p>
+              </div>
+              <div class="flex flex-col items-end">
+                <p class="text-xl text-blue-700">₹55,000.00</p>
+                <p class="text-gray-500 text-xs">Starting Price</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white p-2 border-1 border-gray-300">
+            <img
+              src="https://www.thomascook.in/images/home-page-banners/2024/nov/small-tile/singapore-1.jpg"
+              alt=""
+              srcset=""
+            />
+            <div class="flex items-center justify-between">
+              <div class="flex flex-col items-start">
+                <p class="text-gray-600">Singapore</p>
+                <p class="text-gray-500 text-xs">Packages</p>
+              </div>
+              <div class="flex flex-col items-end">
+                <p class="text-xl text-blue-700">₹33,000.00</p>
+                <p class="text-gray-500 text-xs">Starting Price</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white p-2 border-1 border-gray-300">
+            <img
+              src="https://www.thomascook.in/images/home-page-banners/2024/nov/small-tile/thailand-1.jpg"
+              alt=""
+              srcset=""
+            />
+            <div class="flex items-center justify-between">
+              <div class="flex flex-col items-start">
+                <p class="text-gray-600">Srilanka</p>
+                <p class="text-gray-500 text-xs">Packages</p>
+              </div>
+              <div class="flex flex-col items-end">
+                <p class="text-xl text-blue-700">₹56,000.00</p>
+                <p class="text-gray-500 text-xs">Starting Price</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div> 
+        <div class="bg-gray-200 flex flex-col items-center justify-center py-10">
+          <div class="flex flex-col items-center">
+            <h2 class="text-blue-700 text-2xl mb-4">
+              India & Around Holiday Packages
+            </h2>
+            <p class="w-5/6 text-gray-700">
+              Travelling abroad for a holiday is a great thing but there isn’t anything that beats the diversity of landscapes and cultures in India. We inspire…
+
+            </p>
+            <div class="flex items-center space-x-4 mt-4">
+              <div class="bg-white p-2 border-1 border-gray-300">
+                <img
+                  src="https://www.thomascook.in/images/home-page-banners/Kerala_HomePage.jpg "
+                  alt=""
+                  srcset=""
+                />
+                <div class="flex items-center justify-between">
+                  <div class="flex flex-col items-start">
+                    <p class="text-gray-600">Kerala</p>
+                    <p class="text-gray-500 text-xs">Packages</p>
+                  </div>
+                  <div class="flex flex-col items-end">
+                    <p class="text-xl text-blue-700">₹26,000.00</p>
+                    <p class="text-gray-500 text-xs">Starting Price</p>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white p-2 border-1 border-gray-300">
+                <img
+                  src="https://www.thomascook.in/images/home-page-banners/2024/april/sri-lanka-rev-Small-Tiles.jpg"
+                  alt=""
+                  srcset=""
+                />
+                <div class="flex items-center justify-between">
+                  <div class="flex flex-col items-start">
+                    <p class="text-gray-600">Srilanka</p>
+                    <p class="text-gray-500 text-xs">Packages</p>
+                  </div>
+                  <div class="flex flex-col items-end">
+                    <p class="text-xl text-blue-700">₹48,000.00</p>
+                    <p class="text-gray-500 text-xs">Starting Price</p>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white p-2 border-1 border-gray-300">
+                <img
+                  src="https://www.thomascook.in/images/home-page-banners/2024/nov/tile-section/chardham.jpg"
+                  alt=""
+                  srcset=""
+                />
+                <div class="flex items-center justify-between">
+                  <div class="flex flex-col items-start">
+                    <p class="text-gray-600">himachal</p>
+                    <p class="text-gray-500 text-xs">Packages</p>
+                  </div>
+                  <div class="flex flex-col items-end">
+                    <p class="text-xl text-blue-700">₹30,000.00</p>
+                    <p class="text-gray-500 text-xs">Starting Price</p>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white p-2 border-1 border-gray-300">
+                <img
+                  src="https://www.thomascook.in/images/home-page-banners/2024/april/Himachal-Small-Tiles.jpg"
+                  alt=""
+                  srcset=""
+                />
+                <div class="flex items-center justify-between">
+                  <div class="flex flex-col items-start">
+                    <p class="text-gray-600">Do Dham yatra</p>
+                    <p class="text-gray-500 text-xs">Packages</p>
+                  </div>
+                  <div class="flex flex-col items-end">
+                    <p class="text-xl text-blue-700">₹80,000.00</p>
+                    <p class="text-gray-500 text-xs">Starting Price</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div>
+        <div class="bg-gray-200 flex flex-col items-center justify-center ">
+          <div class="flex flex-col items-center">
+            <h2 class="text-blue-700 text-2xl mb-4">
+              Honeymoon Holiday Packages
+            </h2>
+            <p class="w-5/6 text-gray-700">
+              Whether you are planning your honeymoon in scenic Kashmir or picturesque Switzerland, Thomas Cook India’s honeymoon packages are tailor-made for
+              ..
+            </p>
+            <div class="flex items-center space-x-4 mt-4">
+              <div class="bg-white p-2 border-1 border-gray-300">
+                <img
+                  src="https://www.thomascook.in/images/home-page-banners/2024/nov/small-tile/andaman-1.jpg"
+                  alt=""
+                  srcset=""
+                />
+                <div class="flex items-center justify-between">
+                  <div class="flex flex-col items-start">
+                    <p class="text-gray-600">Andaman</p>
+                    <p class="text-gray-500 text-xs">Packages</p>
+                  </div>
+                  <div class="flex flex-col items-end">
+                    <p class="text-xl text-blue-700">₹70,000.00</p>
+                    <p class="text-gray-500 text-xs">Starting Price</p>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white p-2 border-1 border-gray-300">
+                <img
+                  src="https://www.thomascook.in/images/home-page-banners/2024/nov/small-tile/thailand-1-1.jpg"
+                  alt=""
+                  srcset=""
+                />
+                <div class="flex items-center justify-between">
+                  <div class="flex flex-col items-start">
+                    <p class="text-gray-600">thailand</p>
+                    <p class="text-gray-500 text-xs">Packages</p>
+                  </div>
+                  <div class="flex flex-col items-end">
+                    <p class="text-xl text-blue-700">₹33,000.00</p>
+                    <p class="text-gray-500 text-xs">Starting Price</p>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white p-2 border-1 border-gray-300">
+                <img
+                  src="https://www.thomascook.in/images/home-page-banners/2024/april/Kashmir-Small-Tiles.jpg"
+                  alt=""
+                  srcset=""
+                />
+                <div class="flex items-center justify-between">
+                  <div class="flex flex-col items-start">
+                    <p class="text-gray-600">Kashmir</p>
+                    <p class="text-gray-500 text-xs">Packages</p>
+                  </div>
+                  <div class="flex flex-col items-end">
+                    <p class="text-xl text-blue-700">₹44,000.00</p>
+                    <p class="text-gray-500 text-xs">Starting Price</p>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white p-2 border-1 border-gray-300">
+                <img
+                  src="https://www.thomascook.in/images/home-page-banners/2024/nov/small-tile/Philippines-1.jpg"
+                  alt=""
+                  srcset=""
+                />
+                <div class="flex items-center justify-between">
+                  <div class="flex flex-col items-start">
+                    <p class="text-gray-600">Philippines</p>
+                    <p class="text-gray-500 text-xs">Packages</p>
+                  </div>
+                  <div class="flex flex-col items-end">
+                    <p class="text-xl text-blue-700">₹85,000.00</p>
+                    <p class="text-gray-500 text-xs">Starting Price</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div>
+        <div class="bg-gray-200 flex flex-col items-center justify-center py-10">
+          <div class="flex flex-col items-center">
+            <h2 class="text-blue-700 text-2xl mb-4">
+              Thomas Cook Specials
+            </h2>
+            <p class="w-5/6 text-gray-700">
+              Watch the beauty of India and the World through a different lens! Begin your next adventure now only with Thomas Cook Special Tour Packages. 
+
+            </p>
+            <div class="flex items-center space-x-4 mt-4">
+              <div class="bg-white p-2 border-1 border-gray-300">
+                <img
+                  src="https://www.thomascook.in/images/home-page-banners/2024/april/long-weekend.jpg"
+                  alt=""
+                  srcset=""
+                />
+                <div class="flex items-center justify-between">
+                  <div class="flex flex-col items-start">
+                    <p class="text-gray-600">india</p>
+                    <p class="text-gray-500 text-xs">Packages</p>
+                  </div>
+                  <div class="flex flex-col items-end">
+                    <p class="text-xl text-blue-700">₹63,000.00</p>
+                    <p class="text-gray-500 text-xs">Starting Price</p>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white p-2 border-1 border-gray-300">
+                <img
+                  src="https://www.thomascook.in/images/home-page-banners/2024/april/wild.jpg"
+                  alt=""
+                  srcset=""
+                />
+                <div class="flex items-center justify-between">
+                  <div class="flex flex-col items-start">
+                    <p class="text-gray-600">Whild</p>
+                    <p class="text-gray-500 text-xs">Packages</p>
+                  </div>
+                  <div class="flex flex-col items-end">
+                    <p class="text-xl text-blue-700">₹33,000.00</p>
+                    <p class="text-gray-500 text-xs">Starting Price</p>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white p-2 border-1 border-gray-300">
+                <img
+                  src="https://www.thomascook.in/images/home-page-banners/2024/april/Spiritual-Varanasi-Small-Tiles.jpg"
+                  alt=""
+                  srcset=""
+                />
+                <div class="flex items-center justify-between">
+                  <div class="flex flex-col items-start">
+                    <p class="text-gray-600">Spiritual</p>
+                    <p class="text-gray-500 text-xs">Packages</p>
+                  </div>
+                  <div class="flex flex-col items-end">
+                    <p class="text-xl text-blue-700">₹22,000.00</p>
+                    <p class="text-gray-500 text-xs">Starting Price</p>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white p-2 border-1 border-gray-300">
+                <img
+                  src="https://www.thomascook.in/images/home-page-banners/2024/april/bogo1.jpg"
+                  alt=""
+                  srcset=""
+                />
+                <div class="flex items-center justify-between">
+                  <div class="flex flex-col items-start">
+                    <p class="text-gray-600">International</p>
+                    <p class="text-gray-500 text-xs">Packages</p>
+                  </div>
+                  <div class="flex flex-col items-end">
+                    <p class="text-xl text-blue-700">₹11,000.00</p>
+                    <p class="text-gray-500 text-xs">Starting Price</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
